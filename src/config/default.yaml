@@ -1,0 +1,37 @@
+
+host: localhost
+port: 8891
+cors: true
+ui: true
+
+silent: false
+level: info
+
+engine: phantomjs
+timeout: 60000
+compress: false
+cache: 3600
+cleanupStartup: true
+cleanupRuntime: true
+
+commands:
+    slimerjs:
+        linux: "xvfb-run -a slimerjs"
+        freebsd: "xvfb-run -a slimerjs"
+        sunos: "xvfb-run -a slimerjs"
+        darwin: "slimerjs"
+        win32: "slimerjs.bat"
+    phantomjs:
+        linux: "phantomjs --ignore-ssl-errors=true --web-security=false"
+        freebsd: "phantomjs --ignore-ssl-errors=true --web-security=false"
+        sunos: "phantomjs --ignore-ssl-errors=true --web-security=false"
+        darwin: "phantomjs --ignore-ssl-errors=true --web-security=false"
+        win32: "phantomjs --ignore-ssl-errors=true --web-security=false"
+
+whitelist:
+    - "*"
+
+security:
+    basic:
+       # username: admin
+       # password: xyzzy56
