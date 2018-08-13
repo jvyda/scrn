@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+var scrn = require("./src/scrn.js");
+
+scrn.main();
