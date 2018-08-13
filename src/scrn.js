@@ -130,7 +130,7 @@ function runWebServer(conf, onStart) {
               }
           });
 
-    logger.info('Jayant your server started on %s:%d', host, port);
+    logger.info('Your server started on %s:%d', host, port);
 
     initExitHandling(server);
 }
