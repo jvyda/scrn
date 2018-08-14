@@ -2,7 +2,7 @@
 host: localhost
 port: 8891
 cors: true
-ui: true
+ui: false
 
 silent: false
 level: info
